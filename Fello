@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تحالف الألعاب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f7f7f7;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            color: #e60000;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        .form-group button {
+            background-color: #e60000;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #cc0000;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #e60000;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>تحالف الألعاب</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>طلب الانضمام</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reason">سبب الانضمام:</label>
+                    <textarea id="reason" name="reason" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">إرسال</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>تابعنا على:</p>
+        <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+        <a href="https://discord.com/" target="_blank">Discord</a>
+    </footer>
+</body>
+</html>
